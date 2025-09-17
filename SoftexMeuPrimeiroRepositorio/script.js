@@ -14,9 +14,9 @@ carro.cor = "Preto"; //alterando valor de propriedade ja existente
 
 
 let carro2 = {
-    marca:"honda",
-    modelo: "civic",
-    ligar: function (){
+    marca :"honda",
+    modelo : "civic",
+    ligar : function (){
         console.log("O carro esá ligado!"); //criando função dentro de caracteristicas
     }
 }; carro2.ligar();
@@ -39,54 +39,12 @@ let pessoa = {
 
 //1.
 let aluno = {
-    nome: "Bruno",
-    idade: 21,
+    nome : "Bruno",
+    idade : 21,
     curso: "ADS"
 }; console.log(aluno)
 
 
-//criando METODO  apresentar
+//2.
 aluno.apresentar = `Meu nome é ${aluno.nome} e eu estudo ${aluno.curso}.`;
 console.log(aluno.apresentar);
-
-
-//2.
-let livro = {
-    titulo:"Só para baixinhos" ,
-    autor: "Xuxa",
-    ano: 2020,
-    disponivel: true,
-};
-    livro.emprestar = function(){
-    livro.disponivel=false
-    }    
-    console.log(livro.disponivel);
-    livro.emprestar();
-    console.log(livro.disponivel);
-
-
-//3.
-let produto = {
-    nome: "Arroz",
-    preco: 8,
-    estoque: 45
-}; produto.vender = function(){
-    produto.estoque -= 10;
-}; produto.repor = function(){
-    produto.estoque += 10;
-};
-    console.log(produto.estoque);
-    produto.vender();
-    console.log(produto.estoque);
-    produto.repor();
-    console.log(produto.estoque);
-
-
-//4.
-
-let contaBancaria = {
-    titular: "Zé",
-    saldo: 25
-}; contaBancaria.depositar = function(){
-    
-}
